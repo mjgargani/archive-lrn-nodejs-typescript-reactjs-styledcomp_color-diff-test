@@ -1,5 +1,11 @@
 {
-  "name": "colors",
+  "name": "color-diff-test",
+  "author": {
+    "email": "mjgargani@gmail.com",
+    "name": "Rodrigo Gargani Oliveira",
+    "url": "https://gargani.dev/"
+  },
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
