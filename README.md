@@ -1,6 +1,6 @@
 # nodejs-ts-reactjs_color-diff-test
 
-![thumbnail](thumbnail.gif)
+![thumbnail](thumbnail.webp)
 
 ## Descrição / Description
 
@@ -10,9 +10,9 @@ Color perception test programmed in ReactJs, using blocks with different levels 
 
 ## Como rodar / How to run
 
-> ⚠️ Necessita de um [navegador web](https://www.mozilla.org/pt-BR/firefox/download/thanks/) e do [NodeJS](https://nodejs.org/pt-br/). O projeto foi testado utilizando a versão `16.17.1`.
+> ⚠️ Necessita de um [navegador web](https://www.mozilla.org/pt-BR/firefox/download/thanks/) e do [NodeJS](https://nodejs.org/pt-br/). O projeto foi testado utilizando a versão `18.15.0`.
 
-> ⚠️ Requires a [web browser](https://www.mozilla.org/pt-BR/firefox/download/thanks/) and [NodeJS](https://nodejs.org/en/). The project was tested using version `16.17.1`.
+> ⚠️ Requires a [web browser](https://www.mozilla.org/pt-BR/firefox/download/thanks/) and [NodeJS](https://nodejs.org/en/). The project was tested using version `18.15.0`.
 
 ```bash
 npm i # Install the packages / Instale os pacotes
@@ -33,5 +33,14 @@ After compilation takes place, use the browser to access the address `http://loc
 > ⚠️ Requires [Docker](https://docs.docker.com/engine/install/) installed on the host to work.
 
 ```bash
-docker run -it --rm -v $(pwd):/app -p 3000:3000 node:16.17.1 npm --prefix=/app start
+docker run --rm -it \
+  -v $(pwd):/app/ \
+  -w /app/ \
+  -p 3000:3000 \
+  node:18.15.0-alpine \
+  sh -c 'npm i && npm start'
 ```
+
+Após a compilação ocorrer, use o navegador para acessar o endereço `http://localhost:3000/`.
+
+After compilation takes place, use the browser to access the address `http://localhost:3000/`.
