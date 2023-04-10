@@ -1,4 +1,4 @@
-# nodejs-ts-reactjs_color-diff-test
+# nodejs-ts-reactjs-styledcomponents_color-diff-test
 
 ![thumbnail](thumbnail.webp)
 
